@@ -44,6 +44,7 @@ export const Demo = () => {
                   placeholder="bucket name"
                   onChange={(e) => {
                     setInfo({ ...info, bucketName: e.target.value });
+                    setInfo({ ...info, bucketName: e.target.value });
                   }}
                 />
               </div>
@@ -97,6 +98,7 @@ export const Demo = () => {
                 alert('success');
               }
             } catch (err) {
+              console.log(typeof err)
               console.log(typeof err)
               if (err instanceof Error) {
                 alert(err.message);
