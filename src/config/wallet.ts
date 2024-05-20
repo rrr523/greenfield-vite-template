@@ -85,7 +85,7 @@ export interface MyWalletOptions {
   chains: Chain[];
 }
 
-const RainbowTrustWalletConnector = ({ chains, projectId }: MyWalletOptions): Wallet => ({
+const RainbowTrustWalletConnector = (): Wallet => ({
   id: '_trust-wallet',
   name: 'Trust Wallet',
   iconUrl: 'https://my-image.xyz',
